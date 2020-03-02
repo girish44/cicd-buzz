@@ -15,10 +15,10 @@ def sample(l, n = 1):
     return result
 
 def generate_buzz():
-    buzz_terms = sample(buzz, 3)
+    buzz_terms = sample(buzz, 2)
     print ("Buzz terms ==", buzz_terms)
     phrase = ' '.join([sample(adjectives), buzz_terms[0], sample(adverbs),
-        sample(verbs), buzz_terms[1], "and", buzz_terms[2]])
+        sample(verbs), buzz_terms[1]])
     return phrase.title()
 
 if __name__ == "__main__":
